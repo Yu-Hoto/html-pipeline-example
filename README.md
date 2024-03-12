@@ -23,8 +23,8 @@ cd html-pipeline-example
 bundle install
 ruby example.rb
 ### puts
-"BEFORE: Hello \n\n\n https://google.com!!!"
-"AFTER : Hello\n <a href=\"https://google.com\">https://google.com</a>!!!"
+"BEFORE: Hello \n\n\n https://google.com!!! this text is very long. but, this pipeline output max 100 characters. over 100 character text adjust 100 character text."
+"AFTER : Hello\n <a href=\"https://google.com\">https://google.com</a>!!! this text is very long. but, this pipeline output max 100 characters. o"
 
 ruby example.rb "Hello?\n\n\n https://google.com."
 ### puts
