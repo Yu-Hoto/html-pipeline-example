@@ -20,6 +20,7 @@ replace with one \n.
 ```
 git clone git@github.com:Yu-Hoto/html-pipeline-example.git
 cd html-pipeline-example
+bundle install
 ruby example.rb
 ### puts
 "BEFORE: Hello \n\n\n https://google.com!!!"
