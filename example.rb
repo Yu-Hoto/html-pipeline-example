@@ -9,9 +9,8 @@ pipeline = HTMLPipeline.new(text_filters: [HTMLPipeline::AutoLinkFilter.new, HTM
 
 if ARGV[0] == nil
   example_text = "Hello \n\n\n https://google.com!!!"
-  p "BEFORE: #{example_text}"
-  p "AFTER : #{pipeline.call(example_text)[:output]}"
 else
-  p "BEFORE: #{ARGV[0]}"
-  p "AFTER : #{pipeline.call(ARGV[0])}"
+  example_text = ARGV[0].gsub(/ *\\n+/, "\n")
 end
+p "BEFORE: #{example_text}"
+p "AFTER : #{pipeline.call(example_text)[:output]}"
